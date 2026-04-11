@@ -30,8 +30,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/zugaldia/speedofsound.git
-        tag: v0.11.0
-        commit: 63807938b9d8f627a237469ca1c9963758c063cf
+        tag: v0.12.0
+        commit: 350c676441288bb4080a3655f48286a531b0d0ad
         disable-lfs: false # (false is the default, making it explicit to ensure we bundle the Whisper Tiny model files)
       - buildSrc/flatpak-sources.json
       - core/flatpak-sources.json
