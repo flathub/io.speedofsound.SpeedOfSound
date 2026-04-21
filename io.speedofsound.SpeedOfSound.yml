@@ -15,6 +15,7 @@ finish-args:
   - --socket=fallback-x11    # Show windows using X11 if Wayland is not available
   - --share=ipc              # Share IPC namespace with the host (needed for X11 performance)
   - --socket=pulseaudio      # Access to PulseAudio (includes mic input)
+  - --talk-name=org.kde.StatusNotifierWatcher  # System tray via StatusNotifier/AppIndicator
   - --env=JAVA_HOME=/app/jre # See: https://github.com/flathub/org.freedesktop.Sdk.Extension.openjdk25
 
 modules:
@@ -30,8 +31,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/zugaldia/speedofsound.git
-        tag: v0.12.0
-        commit: 350c676441288bb4080a3655f48286a531b0d0ad
+        tag: v0.13.0
+        commit: e17958461710b70ea502190f651813f019cd4359
         disable-lfs: false # (false is the default, making it explicit to ensure we bundle the Whisper Tiny model files)
       - buildSrc/flatpak-sources.json
       - core/flatpak-sources.json
